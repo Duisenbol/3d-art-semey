@@ -53,6 +53,26 @@ const ART_PIECES = [
     title: 'Serenity',
     imgPath: '/forest.jpeg',
   },
+  {
+    title: 'Зов вселенной',
+    imgPath: '/call-of-the-universe.jpeg',
+  },
+  {
+    title: 'Прикосновение надежды',
+    imgPath: '/touch-of-hope.jpeg',
+  },
+  {
+    title: 'Прикосновение света',
+    imgPath: '/touch-of-light.jpeg',
+  },
+  {
+    title: 'Бақыт құшағында',
+    imgPath: '/happiness.jpeg',
+  },
+  {
+    title: 'На пороге будущего',
+    imgPath: '/future.jpeg',
+  },
 ]
 
 const WallArt = (props) => {
@@ -127,7 +147,7 @@ const Scene = () => {
             font="https://fonts.gstatic.com/s/sacramento/v5/buEzpo6gcdjy0EiZMBUG4C0f-w.woff"
             castShadow
           >
-            Creativity is allowing yourself to make mistakes.
+            Art Gallery
           </Text>
           <Text
             position-z={1}
@@ -139,7 +159,7 @@ const Scene = () => {
             font="https://fonts.gstatic.com/s/sacramento/v5/buEzpo6gcdjy0EiZMBUG4C0f-w.woff"
             castShadow
           >
-            Art is knowing which ones to keep.
+            NIS
           </Text>
           <Text
             position={[0, -0.5, 1.5]}
@@ -148,7 +168,7 @@ const Scene = () => {
             font="https://fonts.gstatic.com/s/sacramento/v5/buEzpo6gcdjy0EiZMBUG4C0f-w.woff"
           // castShadow
           >
-            ~ Scott Adams
+            ~ 2024
           </Text>
 
           {ART_PIECES.map((art, i) => {
