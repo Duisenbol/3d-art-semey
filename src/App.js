@@ -10,49 +10,21 @@ const ART_PIECES = [
     imgPath: '/beauty_and_beast.jpeg',
   },
   {
-    title: 'Stillness',
+    title: 'Бақыт құшағында',
     imgPath: '/crane.jpeg',
   },
   {
-    title: 'Foxy',
+    title: 'На пороге будущего',
     imgPath: '/foxy.jpeg',
   },
   {
-    title: 'Gentle Giant',
+    title: 'Прикосновение надежды',
     imgPath: '/horse_sketch.jpeg',
   },
   {
     title: 'Purity',
     imgPath: '/kindness.jpeg',
-  },
-  {
-    title: 'Lonely Together',
-    imgPath: '/lonely_together.jpeg',
-  },
-  {
-    title: 'Owl',
-    imgPath: '/owl.jpeg',
-  },
-  {
-    title: 'Menace',
-    imgPath: '/panther.jpeg',
-  },
-  {
-    title: 'Paradise',
-    imgPath: '/paradise.jpeg',
-  },
-  {
-    title: 'Friendship',
-    imgPath: '/sprited_away.jpeg',
-  },
-  {
-    title: 'Wanderlust',
-    imgPath: '/wonder.jpeg',
-  },
-  {
-    title: 'Serenity',
-    imgPath: '/forest.jpeg',
-  },
+  },  
 ]
 
 const WallArt = (props) => {
