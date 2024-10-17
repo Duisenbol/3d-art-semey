@@ -31,8 +31,8 @@ const WallArt = (props) => {
   const { art, i } = props
   const { width: w, height: h } = useThree((state) => state.viewport);
   const gap = 4;
-  const imageWidth = w/2;
-  const imageHeight = h/2;
+  const imageWidth = w;
+  const imageHeight = h;
   const texture = useLoader(TextureLoader, art.imgPath)
 
   return (
@@ -50,7 +50,7 @@ const WallArt = (props) => {
           color={0xffffff}
         />
         <mesh castShadow position={[(i + 1) * (imageWidth + gap) + (i + 1), 0, 0]}>
-          <boxBufferGeometry attach="geometry" args={[imageWidth, imageHeight, 0.07]} />
+          <boxBufferGeometry attach="geometry" args={[imageWidth/2, imageHeight/2, 0.07]} />
           <meshStandardMaterial
             attach="material"
             map={texture}
@@ -112,7 +112,7 @@ const Scene = () => {
             font="https://fonts.gstatic.com/s/sacramento/v5/buEzpo6gcdjy0EiZMBUG4C0f-w.woff"
             castShadow
           >
-            NIS
+            by Ruslanqyzy Raushan
           </Text>
           <Text
             position={[0, -0.5, 1.5]}
@@ -121,7 +121,7 @@ const Scene = () => {
             font="https://fonts.gstatic.com/s/sacramento/v5/buEzpo6gcdjy0EiZMBUG4C0f-w.woff"
           // castShadow
           >
-            ~ by Ruslanqyzy Raushan
+            ~ NIS
           </Text>
 
           {ART_PIECES.map((art, i) => {
