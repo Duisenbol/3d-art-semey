@@ -58,8 +58,8 @@ const WallArt = (props) => {
           />
         </mesh>
 
-        <mesh position={[(i + 1) * (imageWidth + gap) + (i + 1), -2.5, 0]}>
-          <planeGeometry args={[1.25, 0.5]} />
+        <mesh position={[(i + 1) * (imageWidth + gap) + (i + 1), 0, 0]}>
+          <planeGeometry args={[0, 0.5]} />
           <meshStandardMaterial color={0xFAEBD7} />
           <Text
             position-z={0}
@@ -80,7 +80,7 @@ const WallArt = (props) => {
 const Scene = () => {
   const { width: screenWidth } = useThree((state) => state.viewport);
   console.log("screenWidth", screenWidth)
-  const textScale = screenWidth < 5.5 ? 2 : 4
+  const textScale = screenWidth < 3 ? 2 : 4
 
   return (
     <Suspense fallback={
