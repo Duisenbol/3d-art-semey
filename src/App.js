@@ -32,6 +32,7 @@ const WallArt = (props) => {
   const { width: w, height: h } = useThree((state) => state.viewport);
   const gap = 4;
   const imageWidth = 3;
+  const imageHeight = 3;
   const texture = useLoader(TextureLoader, art.imgPath)
 
   return (
