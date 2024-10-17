@@ -6,7 +6,7 @@ import { TextureLoader, Vector3 } from 'three'
 
 const ART_PIECES = [
   {
-    title: 'Beautiful Beast',
+    title: 'TESTING 1 2 3',
     imgPath: '/beauty_and_beast.jpeg',
   },
   {
