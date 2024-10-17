@@ -10,19 +10,19 @@ const ART_PIECES = [
     imgPath: '/beauty_and_beast.jpeg',
   },
   {
-    title: 'Бақыт құшағында',
+    title: 'Happiness',
     imgPath: '/crane.jpeg',
   },
   {
-    title: 'На пороге будущего',
+    title: 'Future',
     imgPath: '/foxy.jpeg',
   },
   {
-    title: 'Прикосновение надежды',
+    title: 'Touch of hope',
     imgPath: '/horse_sketch.jpeg',
   },
   {
-    title: 'Purity',
+    title: 'Touch of light',
     imgPath: '/kindness.jpeg',
   },  
 ]
@@ -88,7 +88,7 @@ const Scene = () => {
         Загрузка галереи...
       </Html>
     }>
-      <ScrollControls infinite horizontal damping={4} pages={39*Math.exp(-0.11 * screenWidth) } distance={1}>
+      <ScrollControls infinite horizontal damping={4} pages={20*Math.exp(-0.11 * screenWidth) } distance={1}>
         <Scroll>
           <Text
             position-z={0}
