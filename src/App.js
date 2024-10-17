@@ -89,7 +89,7 @@ const Scene = () => {
         Загрузка галереи...
       </Html>
     }>
-      <ScrollControls infinite horizontal damping={4} pages={40*Math.exp(-0.11 * screenWidth) } distance={1}>
+      <ScrollControls infinite horizontal damping={4} pages={39*Math.exp(-0.11 * screenWidth) } distance={1}>
         <Scroll>
           <Text
             position-z={0}
