@@ -39,7 +39,7 @@ const WallArt = (props) => {
     <>
       <group>
         <SpotLight
-          position={[(i + 1) * (imageWidth + gap) + (i + 1) - w / 4, 2.5, 1]}
+          position={[(i + 1) * (imageWidth/2 + gap) + (i + 1) - w / 4, 2.5, 1]}
           penumbra={1}
           angle={0.6}
           attenuation={1}
@@ -49,7 +49,7 @@ const WallArt = (props) => {
           castShadow
           color={0xffffff}
         />
-        <mesh castShadow position={[(i + 1) * (imageWidth + gap) + (i + 1), 0, 0]}>
+        <mesh castShadow position={[(i + 1) * (imageWidth/2 + gap) + (i + 1), 0, 0]}>
           <boxBufferGeometry attach="geometry" args={[imageWidth/2, imageHeight/2, 0.07]} />
           <meshStandardMaterial
             attach="material"
@@ -59,7 +59,7 @@ const WallArt = (props) => {
           />
         </mesh>
 
-        <mesh position={[(i + 1) * (imageWidth + gap) + (i + 1), -2.5, 0]}>
+        <mesh position={[(i + 1) * (imageWidth/2 + gap) + (i + 1), -2.5, 0]}>
           <planeGeometry args={[2, 0.5]} />
           <meshStandardMaterial color={0xFAEBD7} />
           <Text
