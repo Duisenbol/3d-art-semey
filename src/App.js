@@ -30,7 +30,7 @@ const ART_PIECES = [
 const WallArt = (props) => {
   const { art, i } = props
   const { width: w, height: h } = useThree((state) => state.viewport);
-  const gap = 4;
+  const gap = 1;
   const imageWidth = w;
   const imageHeight = h;
   const texture = useLoader(TextureLoader, art.imgPath)
@@ -121,7 +121,7 @@ const Scene = () => {
             font="https://fonts.gstatic.com/s/sacramento/v5/buEzpo6gcdjy0EiZMBUG4C0f-w.woff"
           // castShadow
           >
-            ~ 2024
+            ~ by Ruslanqyzy Raushan
           </Text>
 
           {ART_PIECES.map((art, i) => {
