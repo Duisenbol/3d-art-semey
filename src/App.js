@@ -68,7 +68,7 @@ const WallArt = (props) => {
             color="black"
             anchorX="center"
             anchorY="middle"
-            font="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700"
+            font="https://fonts.gstatic.com/s/oswald/v53/TK3iWkUHHAIjg752FD8Ghe4.woff2"
           >
             {art.title}
           </Text>
