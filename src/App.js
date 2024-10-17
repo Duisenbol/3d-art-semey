@@ -31,8 +31,8 @@ const WallArt = (props) => {
   const { art, i } = props
   const { width: w, height: h } = useThree((state) => state.viewport);
   const gap = 1;
-  const imageWidth = w;
-  const imageHeight = h;
+  const imageWidth = w/2;
+  const imageHeight = h/2;
   const texture = useLoader(TextureLoader, art.imgPath)
 
   return (
@@ -50,7 +50,7 @@ const WallArt = (props) => {
           color={0xffffff}
         />
         <mesh castShadow position={[(i + 1) * (imageWidth + gap) + (i + 1), 0, 0]}>
-          <boxBufferGeometry attach="geometry" args={[imageWidth/2, imageHeight/2, 0.07]} />
+          <boxBufferGeometry attach="geometry" args={[imageWidth, imageHeight, 0.07]} />
           <meshStandardMaterial
             attach="material"
             map={texture}
