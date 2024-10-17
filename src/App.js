@@ -10,7 +10,7 @@ const ART_PIECES = [
     imgPath: '/beauty_and_beast.jpeg',
   },
   {
-    title: 'Happiness',
+    title: 'Бақыт құшағында',
     imgPath: '/crane.jpeg',
   },
   {
@@ -68,7 +68,7 @@ const WallArt = (props) => {
             color="black"
             anchorX="center"
             anchorY="middle"
-            font="Roboto"
+            font="Times New Roman"
           >
             {art.title}
           </Text>
