@@ -6,7 +6,7 @@ import { TextureLoader, Vector3 } from 'three'
 
 const ART_PIECES = [
   {
-    title: 'Beautiful Beast',
+    title: 'Call of the universe',
     imgPath: '/beauty_and_beast.jpeg',
   },
   {
@@ -52,26 +52,6 @@ const ART_PIECES = [
   {
     title: 'Serenity',
     imgPath: '/forest.jpeg',
-  },
-  {
-    title: 'Зов вселенной',
-    imgPath: '/call-of-the-universe.jpeg',
-  },
-  {
-    title: 'Прикосновение надежды',
-    imgPath: '/touch-of-hope.jpeg',
-  },
-  {
-    title: 'Прикосновение света',
-    imgPath: '/touch-of-light.jpeg',
-  },
-  {
-    title: 'Бақыт құшағында',
-    imgPath: '/happiness.jpeg',
-  },
-  {
-    title: 'На пороге будущего',
-    imgPath: '/future.jpeg',
   },
 ]
 
@@ -133,7 +113,7 @@ const Scene = () => {
   return (
     <Suspense fallback={
       <Html style={{ fontSize: '6vw', whiteSpace: 'nowrap', color: 'white' }} center>
-        Loading 3D Art Gallery...
+        Загрузка галереи...
       </Html>
     }>
       <ScrollControls infinite horizontal damping={4} pages={39*Math.exp(-0.11 * screenWidth) } distance={1}>
