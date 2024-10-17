@@ -10,11 +10,11 @@ const ART_PIECES = [
     imgPath: '/beauty_and_beast.jpeg',
   },
   {
-    title: 'Бақыт құшағында',
+    title: 'In the arms of happiness',
     imgPath: '/crane.jpeg',
   },
   {
-    title: 'Future',
+    title: 'Contrast of Service',
     imgPath: '/foxy.jpeg',
   },
   {
