@@ -59,7 +59,7 @@ const WallArt = (props) => {
         </mesh>
 
         <mesh position={[(i + 1) * (imageWidth + gap) + (i + 1), -2.5, 0]}>
-          <planeGeometry args={[1.25, 0.5]} />
+          <planeGeometry args={[2, 0.5]} />
           <meshStandardMaterial color={0xFAEBD7} />
           <Text
             position-z={0}
@@ -67,7 +67,7 @@ const WallArt = (props) => {
             color="black"
             anchorX="center"
             anchorY="middle"
-            font="Times New Roman"
+            font="Roboto"
           >
             {art.title}
           </Text>
